@@ -1,21 +1,25 @@
 <!--
-title: 'AWS NestJS Serverless with DynamoDB'
+title: 'AWS NestJS Serverless with Typeorm'
 description: 'This example demonstrates how to setup a simple [Nest](https://github.com/nestjs/nest) application.'
 layout: Doc
 framework: v1
 platform: AWS
 language: nodeJS
-authorLink: 'https://github.com/cfvillarroel'
-authorName: 'Carlos Villarroel'
+forked from: 'https://github.com/cfvillarroel'
 -->
 
-# Nest application example
+# Nest serverless application example using [@nestjs/serverless-core](https://github.com/nestjs/serverless-core)
 
-This example demonstrates how to setup a [Nest](https://github.com/nestjs/nest) application.
+This example demonstrates how to setup a [Nest](https://github.com/nestjs/nest) serverless application.
+
 
 ## Use Cases
-
 -   Setup & deploy a [Nest Application starter](https://github.com/nestjs/typescript-starter)
+
+## Steps before running
+
+-   Install & setup [Serverless](https://www.serverless.com/framework/docs/providers/aws/guide/installation/)
+-   Using the .env.sample create a .env file with the required variables
 
 ## Running the app locally
 
@@ -66,7 +70,7 @@ npm start -- --skipCacheInvalidation
 In order to deploy the endpoint, simply run:
 
 ```bash
-sls deploy
+npm run deploy
 ```
 
 The expected result should be similar to:

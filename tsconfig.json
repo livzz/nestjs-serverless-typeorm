@@ -13,5 +13,15 @@
         "outDir": "./dist",
         "baseUrl": "./"
     },
-    "exclude": ["node_modules"]
+    "exclude": [
+        "node_modules"
+    ],
+    "paths": {
+        "@db-config/*": [
+            "src/config/*"
+        ],
+        "@entities/*": [
+            "src/entity/*"
+        ]
+    }
 }
